@@ -9,5 +9,5 @@ jobs:
       - name: Build the hello-docker Docker image
         run: |
            docker build . --tag shiv1996/hello-world:latest
-           docker push shiv1996/hello-world:tagname
+           docker push shiv1996/hello-world:latest
 
