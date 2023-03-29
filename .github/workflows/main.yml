@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Build the hello-docker Docker image
         run: |
+           pwd
+           ls -al
            docker build .. --tag shiv1996/hello-world:latest
            docker push shiv1996/hello-world:latest
 
