@@ -11,7 +11,7 @@ jobs:
         run: |
            pwd
            ls -al
-           docker login --username=shiv1996 --email=naikshiv41@gmail.com password:tarakmehta134!
+           docker login --username=shiv1996 --email=naikshiv41@gmail.com --password:tarakmehta134!
            docker build . --file Dockerfile --tag shiv1996/hello-world:test
            docker push shiv1996/hello-world:test
 
