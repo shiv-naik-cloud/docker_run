@@ -10,6 +10,6 @@ jobs:
         run: |
            pwd
            ls -al
-           docker build /home/runner/work/. --tag shiv1996/hello-world:latest
+           docker build -f Dockerfile --tag shiv1996/hello-world:latest
            docker push shiv1996/hello-world:latest
 
