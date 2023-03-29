@@ -6,7 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+      - uses: actions/checkout@v2
       - name: Build the hello-docker Docker image
+        working-directory: ../
         run: |
            pwd
            ls -al
